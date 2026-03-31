@@ -1,0 +1,8 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Local Files
+personal
+private
+.skill-lock.json
