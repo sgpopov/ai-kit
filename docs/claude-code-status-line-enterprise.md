@@ -42,7 +42,7 @@ Save to `~/.claude/update-monthly.sh`:
 ```bash
 #!/bin/bash
 CURRENT_MONTH=$(date +%Y-%m)
-COST=$(bun x ccusage monthly --json | jq -r --arg m "$CURRENT_MONTH" '.[] | select(.month == $m) | "$" + (.totalCost | tostring)')
+COST=$(bun x ccusage monthly --json | jq -r --arg m "$CURRENT_MONTH" '.monthly[] | select(.period == $m) | "$" + (.totalCost * 100 | round / 100 | tostring)')
 echo "${COST:-?}" > /tmp/cc_monthly_cost.txt
 ```
 
