@@ -1,9 +1,11 @@
 ---
 name: nestjs-best-practices
-description: NestJS best practices and architecture patterns for production-ready applications and service monorepos. Use this skill when writing, reviewing, or refactoring NestJS modules, shared packages, workers, external integrations, configuration, and operational infrastructure.
+description: Provides NestJS best practices and architecture patterns for production-ready applications and service monorepos. Use this skill when writing, reviewing, or refactoring NestJS modules, shared packages, workers, external integrations, configuration, and operational infrastructure.
 ---
 
 # NestJS Best Practices
+
+## Overview
 
 Comprehensive best practices guide for NestJS applications and monorepos. Contains 30+ rules across 8 categories, prioritized by impact to guide code generation, refactoring, review, and architecture decisions.
 
@@ -110,3 +112,7 @@ Each rule file contains:
 - Correct code example with explanation
 - Review checklist for code review or planning
 - Additional context and references
+
+## Verification
+
+After applying a rule, confirm the code against that rule file's review checklist. Treat the CRITICAL/HIGH categories (Architecture, Dependency Injection, Error Handling, Security, Performance) as blocking — every applicable rule's checklist should pass before the change merges.

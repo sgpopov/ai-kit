@@ -5,6 +5,8 @@ description: Helps users discover and install agent skills when they ask questio
 
 # Find Skills
 
+## Overview
+
 This skill helps you discover and install skills from the open agent skills ecosystem.
 
 ## When to Use This Skill
@@ -140,3 +142,7 @@ I can still help you with this task directly! Would you like me to proceed?
 If this is something you do often, you could create your own skill:
 npx skills init my-xyz-skill
 ```
+
+## Verification
+
+Before recommending a skill, confirm it actually exists in the registry (not invented), its install count and source reputation clear the bar in Step 4, and the install command names the correct `owner/repo@skill`. Never present a skill you haven't verified.

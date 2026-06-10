@@ -1,15 +1,24 @@
 ---
 name: prd-to-issues
-description: Break a PRD into independently-grabbable issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues/tickets, create implementation tickets, or break down a PRD into work items. Works with both GitHub issues and local markdown files.
+description: Breaks a PRD into independently-grabbable issues using tracer-bullet vertical slices. Use when user wants to convert a PRD to issues/tickets, create implementation tickets, or break down a PRD into work items. Works with both GitHub issues and local markdown files.
 ---
 
 # PRD to Issues
+
+## Overview
 
 Break a PRD into independently-grabbable issues using vertical slices (tracer bullets).
 
 Supports two backends:
 - **GitHub** — read/create real GitHub issues via `gh` CLI
 - **Local** — read/write markdown files inside a project directory
+
+## When to Use
+
+- The user wants to convert a PRD into issues/tickets or break it into work items
+- Work is ready to be parallelized across contributors
+
+Use [[prd-to-plan]] instead when the user wants a single phased plan file rather than independent issues.
 
 ---
 
@@ -118,3 +127,7 @@ Reference by number from the parent PRD:
 </issue-template>
 
 Do NOT modify or close the parent PRD.
+
+## Verification
+
+Before finishing, confirm: every user story in the PRD is covered by at least one slice, each slice is a complete vertical path (not a single layer), `Blocked by` references resolve to real issue numbers/filenames created in dependency order, and the user approved the breakdown in Step 5.

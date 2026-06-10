@@ -1,9 +1,18 @@
 ---
 name: write-a-skill
-description: Create new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.
+description: Creates new agent skills with proper structure, progressive disclosure, and bundled resources. Use when user wants to create, write, or build a new skill.
 ---
 
 # Writing Skills
+
+## Overview
+
+Create new agent skills with proper structure, progressive disclosure, and bundled resources, following this project's genre templates (see CLAUDE.md).
+
+## When to Use
+
+- The user wants to create, write, or build a new skill
+- An existing skill needs restructuring to match the conventions
 
 ## Process
 
@@ -36,25 +45,31 @@ skill-name/
 
 ## SKILL.md Template
 
+Required sections: **Overview**, **When to Use**, the **core procedure**, and **Verification**. Process/discipline skills add **Red Flags** (and **Common Rationalizations** when corner-cutting is tempting); reference catalogs use rule tables as the body; prompt skills stay minimal. See CLAUDE.md for the genre templates.
+
 ```md
 ---
 name: skill-name
-description: Brief description of capability. Use when [specific triggers].
+description: Third-person summary of what it does. Use when [specific triggers].
 ---
 
 # Skill Name
 
-## Quick start
+## Overview
 
-[Minimal working example]
+[What this does and why, in 1–2 lines]
 
-## Workflows
+## When to Use
 
-[Step-by-step processes with checklists for complex tasks]
+[Triggers, plus when NOT to fire]
 
-## Advanced features
+## Process
 
-[Link to separate files: See [REFERENCE.md](REFERENCE.md)]
+[Step-by-step procedure — or rule tables for a reference catalog]
+
+## Verification
+
+[How to confirm the output is correct]
 ```
 
 ## Description Requirements
@@ -109,8 +124,10 @@ Split into separate files when:
 
 After drafting, verify:
 
-- [ ] Description includes triggers ("Use when...")
-- [ ] SKILL.md under 100 lines
+- [ ] Description is third person, includes triggers ("Use when...")
+- [ ] Has Overview, When to Use, the core procedure, and Verification
+- [ ] Genre-appropriate sections (Red Flags for discipline skills)
+- [ ] SKILL.md under ~100 lines
 - [ ] No time-sensitive info
 - [ ] Consistent terminology
 - [ ] Concrete examples included

@@ -1,7 +1,20 @@
 ---
 name: grill-with-docs
-description: Grilling session that challenges your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.
+description: Grills your plan against the existing domain model, sharpens terminology, and updates documentation (CONTEXT.md, ADRs) inline as decisions crystallise. Use when user wants to stress-test a plan against their project's language and documented decisions.
 ---
+
+# Grill With Docs
+
+## Overview
+
+A documentation-aware grilling session: it stress-tests a plan the way [[grill-me]] does, but also challenges it against the project's `CONTEXT.md` glossary and ADRs, and captures resolved terminology and decisions in those files as the conversation unfolds.
+
+## When to Use
+
+- The user wants to stress-test a plan against their project's documented language and decisions
+- The repo keeps (or should keep) a `CONTEXT.md` glossary and/or `docs/adr/`
+
+Use plain [[grill-me]] instead when there is no documentation to challenge against and you only need to resolve the design.
 
 <what-to-do>
 
@@ -86,3 +99,7 @@ Only offer to create an ADR when all three are true:
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
 
 </supporting-info>
+
+## Verification
+
+The session is done when every contested term is resolved, `CONTEXT.md` reflects the agreed glossary (no implementation detail), any genuinely load-bearing decision is recorded as an ADR, and no contradiction between the plan and the code remains unsurfaced.

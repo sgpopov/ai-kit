@@ -1,11 +1,18 @@
 ---
 name: ubiquitous-language
-description: Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions "domain model" or "DDD".
+description: Extracts a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions "domain model" or "DDD".
 ---
 
 # Ubiquitous Language
 
+## Overview
+
 Extract and formalize domain terminology from the current conversation into a consistent glossary, saved to a local file.
+
+## When to Use
+
+- The user wants to define domain terms, build a glossary, or harden terminology, or mentions "domain model" / "DDD"
+- The conversation has surfaced ambiguous or conflicting vocabulary worth pinning down
 
 ## Process
 
@@ -82,3 +89,7 @@ When invoked again in the same conversation:
 After writing the file, state:
 
 > I've written/updated `UBIQUITOUS_LANGUAGE.md`. From this point forward I will use these terms consistently. If I drift from this language or you notice a term that should be added, let me know.
+
+## Verification
+
+The glossary is sound when every term has a one-sentence "what it IS" definition, each concept has exactly one canonical name (synonyms listed as aliases to avoid), all conversation ambiguities are flagged with a recommendation, and the example dialogue uses the terms precisely.

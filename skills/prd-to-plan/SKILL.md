@@ -1,11 +1,20 @@
 ---
 name: prd-to-plan
-description: Turn a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions "tracer bullets".
+description: Turns a PRD into a multi-phase implementation plan using tracer-bullet vertical slices, saved as a local Markdown file in ./plans/. Use when user wants to break down a PRD, create an implementation plan, plan phases from a PRD, or mentions "tracer bullets".
 ---
 
 # PRD to Plan
 
+## Overview
+
 Break a PRD into a phased implementation plan using vertical slices (tracer bullets). Output is a Markdown file in `./plans/`.
+
+## When to Use
+
+- The user wants a phased implementation plan from a PRD, or mentions "tracer bullets"
+- A single ordered plan file is preferable to independent issues
+
+Use [[prd-to-issues]] instead when the work should become separately grabbable tickets.
 
 ## Process
 
@@ -105,3 +114,7 @@ A concise description of this vertical slice. Describe the end-to-end behavior, 
 
 <!-- Repeat for each phase -->
 </plan-template>
+
+## Verification
+
+Before saving, confirm: every PRD user story maps to a phase, each phase is a demoable vertical slice, the plan header captures durable decisions (routes, schema, models) and contains no volatile file/function names, and the user approved the breakdown.

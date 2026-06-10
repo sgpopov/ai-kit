@@ -1,13 +1,22 @@
 ---
 name: write-a-prd
-description: Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue or save as a local markdown file. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
+description: Creates a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue or save as a local markdown file. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
 ---
 
 # Write a PRD
 
+## Overview
+
 This skill guides you through creating a PRD via user interview, codebase exploration, and module design.
 
 You may skip steps if you don't consider them necessary.
+
+## When to Use
+
+- The user wants to write a PRD / product requirements document, or plan a new feature
+- A problem is understood well enough to interview around, but the solution still needs shaping
+
+Once the PRD exists, use [[prd-to-plan]] or [[prd-to-issues]] to break it into work.
 
 ---
 
@@ -114,3 +123,7 @@ A description of the things that are out of scope for this PRD.
 Any further notes about the feature.
 
 </prd-template>
+
+## Verification
+
+Before submitting, confirm: the problem and solution are stated from the user's perspective, user stories are exhaustive and in "As an X, I want Y, so that Z" form, implementation/testing decisions avoid volatile file paths and code, and the user has confirmed the module design matches their expectations.

@@ -1,9 +1,11 @@
 ---
 name: react-best-practices
-description: React and Remix.js performance optimization guidelines. This skill should be used when writing, reviewing, or refactoring React/Remix.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Remix.js pages, data fetching, bundle optimization, or performance improvements.
+description: Provides React and Remix.js performance optimization guidelines. This skill should be used when writing, reviewing, or refactoring React/Remix.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Remix.js pages, data fetching, bundle optimization, or performance improvements.
 ---
 
 # React Best Practices
+
+## Overview
 
 Comprehensive performance optimization guide for React and Remix.js applications. Contains 62 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.
 
@@ -135,3 +137,7 @@ Each rule file contains:
 ## Full Compiled Document
 
 For the complete guide with all rules expanded: `AGENTS.md`
+
+## Verification
+
+After applying a rule, confirm the change matches that rule file's correct example and introduces no behavior change. Prioritize the CRITICAL categories (Eliminating Waterfalls, Bundle Size) and confirm the gain with a profile or bundle measurement rather than assuming the optimization helped.
