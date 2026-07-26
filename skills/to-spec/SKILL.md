@@ -1,19 +1,19 @@
 ---
-name: write-a-prd
-description: Creates a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue or save as a local markdown file. Use when user wants to write a PRD, create a product requirements document, or plan a new feature.
+name: to-spec
+description: Creates a spec through user interview, codebase exploration, and module design, then submit as a GitHub issue or save as a local markdown file. Use when user wants to write a spec, create a product requirements document, or plan a new feature.
 ---
 
 # Write a PRD
 
 ## Overview
 
-This skill guides you through creating a PRD via user interview, codebase exploration, and module design.
+This skill guides you through creating a PRD via user interview, codebase exploration, and module design. Do NOT interview the user - just synthesize what you already know. If this skill was mistakenly involved - bail and suggest to the user to perform a brainstorming session first using grill me skill.
 
 You may skip steps if you don't consider them necessary.
 
 ## When to Use
 
-- The user wants to write a PRD / product requirements document, or plan a new feature
+- The user wants to write a spec / PRD / product requirements document, or plan a new feature
 - A problem is understood well enough to interview around, but the solution still needs shaping
 
 Once the PRD exists, use [[prd-to-plan]] or [[prd-to-issues]] to break it into work.
