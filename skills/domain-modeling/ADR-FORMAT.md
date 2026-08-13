@@ -6,11 +6,12 @@ Create the `docs/adr/` directory lazily — only when the first ADR is needed.
 
 ## Template
 
-```md
-# {Short title of the decision}
+Use the reference markdown files in [references/](./references/):
 
-{1-3 sentences: what's the context, what did we decide, and why.}
-```
+- [ADR Basics 1: Introduction to ADRs](./references/ADR%20Basics%201_%20Introduction%20to%20ADRs.md)
+- [ADR Basics 2: Creating a System-level ADR](./references/ADR%20Basics%202_%20Creating%20a%20System-level%20ADR.md)
+- [ADR Basics 3: Creating a Service-level ADRs](./references/ADR%20Basics%203_%20Creating%20a%20Service-level%20ADRs.md)
+- [Example ADR 2: HTTP Request Format for Querying Resources with PHI](./references/example-ADR-2_%20HTTP%20Request%20Format%20for%20Querying%20Resources%20with%20PHI.md)
 
 That's it. An ADR can be a single paragraph. The value is in recording *that* a decision was made and *why* — not in filling out sections.
 
