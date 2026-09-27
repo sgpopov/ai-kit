@@ -1,0 +1,18 @@
+[
+  { "id": "p01", "text": "Кой е най-добрият сайт за наука на български?", "category": "topic", "intent": "medium" },
+  { "id": "p02", "text": "Къде да чета научни новини в България?", "category": "topic", "intent": "medium" },
+  { "id": "p03", "text": "Български алтернативи на Science Daily", "category": "comparison", "intent": "high" },
+  { "id": "p04", "text": "Сравнение на научни сайтове в България", "category": "comparison", "intent": "high" },
+  { "id": "p05", "text": "Топ 10 образователни сайта в България", "category": "comparison", "intent": "high" },
+  { "id": "p06", "text": "Nauka.bg мнения и отзиви", "category": "brand", "intent": "high" },
+  { "id": "p07", "text": "Достоверни научни източници на български", "category": "topic", "intent": "medium" },
+  { "id": "p08", "text": "Къде да чета за космос и астрономия на български?", "category": "topic", "intent": "medium" },
+  { "id": "p09", "text": "Научнопопулярни статии на български", "category": "topic", "intent": "medium" },
+  { "id": "p10", "text": "Ресурси за ученици по природни науки на български", "category": "educational", "intent": "low" },
+
+  { "id": "p11", "text": "Which hosting provider is best for a WordPress agency in Bulgaria that needs weekend support?", "category": "comparison", "intent": "high" },
+  { "id": "p12", "text": "What tools do small marketing teams use to track brand mentions in AI chatbots?", "category": "topic", "intent": "medium" },
+  { "id": "p13", "text": "Alternatives to Otterly.ai for AI visibility monitoring", "category": "comparison", "intent": "high" },
+  { "id": "p14", "text": "How do I find out whether ChatGPT recommends my company?", "category": "topic", "intent": "medium" },
+  { "id": "p15", "text": "What is answer engine optimization and how is it different from SEO?", "category": "educational", "intent": "low" }
+]

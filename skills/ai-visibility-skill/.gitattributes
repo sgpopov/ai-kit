@@ -1,0 +1,6 @@
+# Keep LF in the repository and in every checkout. Python scripts here carry a
+# shebang, and a CRLF line ending breaks it on Linux and macOS.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf

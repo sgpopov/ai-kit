@@ -1,0 +1,39 @@
+[
+  {
+    "type": "Organization",
+    "name": "Example Hosting",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.png",
+    "description": "Managed WordPress hosting for agencies in Bulgaria, with 24/7 support including weekends.",
+    "knowsAbout": [
+      "managed WordPress hosting",
+      "site migration",
+      "WooCommerce performance"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/example",
+      "https://www.facebook.com/example"
+    ]
+  },
+  {
+    "type": "FAQPage",
+    "items": [
+      {
+        "question": "Is it worth paying more for managed hosting if I only have three pages?",
+        "answer": "Usually not. Managed hosting pays off from roughly 5,000 monthly visitors, or immediately if you cannot afford downtime on weekends."
+      },
+      {
+        "question": "Do you actually answer support tickets on Sundays?",
+        "answer": "Yes. Phone, chat and email are staffed 24/7 including weekends and public holidays; median first response is 8 minutes."
+      }
+    ]
+  },
+  {
+    "type": "Product",
+    "name": "Example Hosting — Agency plan",
+    "description": "10 WordPress sites, staging, daily backups, 24/7 support.",
+    "price": "29.00",
+    "priceCurrency": "EUR",
+    "availability": "InStock"
+  }
+]

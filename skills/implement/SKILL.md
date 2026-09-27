@@ -1,15 +1,41 @@
 ---
 name: implement
-description: "Implement a piece of work based on a spec or set of tickets."
+description: "Implement work from an existing spec or set of tickets, including testing, independent review, and a commit."
 disable-model-invocation: true
 ---
 
-Implement the work described by the user in the spec or tickets.
+Implement the work described in the user's spec or tickets. Explicit user
+instructions take precedence over this workflow.
 
-Use /tdd where possible, at pre-agreed seams.
+Read the spec, relevant repository instructions, and existing code and tests.
+Identify the acceptance criteria before editing. Resolve routine details from
+context; ask only when an ambiguity materially affects scope or behavior.
 
-Run typechecking regularly, single test files regularly, and the full test suite once at the end.
+Inspect the current branch and working tree. Preserve existing user changes
+and keep edits focused on the requested work.
 
-Once done, use /code-review to review the work.
+Use the /tdd skill for behavior changes where practical. Use previously agreed
+test boundaries when available; otherwise choose appropriate boundaries from
+the spec and existing tests. Test observable behavior rather than implementation
+details.
 
-Commit your work to the current branch.
+Run focused tests and applicable type checks during implementation. Before
+finishing, verify each acceptance criterion and run the repository's required
+checks, including the full test suite. If a check cannot run or fails for an
+unrelated reason, report the limitation explicitly.
+
+Have a subagent use the /code-review skill to review the diff against the spec.
+Validate its findings, fix relevant issues, and explain any dismissed or deferred
+findings. If independent review is unavailable, perform a self-review and disclose
+that limitation.
+
+After review fixes, rerun affected checks. Repeat broader checks when the fixes
+could invalidate their earlier results.
+
+Commit only the changes belonging to this task on the current branch, unless
+the user instructed otherwise. Inspect the staged diff before committing.
+Do not include unrelated changes or push automatically.
+
+Report what was implemented, verification results, any unmet acceptance criteria
+or remaining issues, and the commit identifier if created. Do not describe
+incomplete or unverified work as fully complete.
